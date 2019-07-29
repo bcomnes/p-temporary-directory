@@ -1,0 +1,28 @@
+{
+  "name": "p-temporary-directory",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcomnes/p-temporary-directory.git"
+  },
+  "keywords": [],
+  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcomnes/p-temporary-directory/issues"
+  },
+  "homepage": "https://github.com/bcomnes/p-temporary-directory#readme",
+  "dependencies": {
+    "temporary-directory": "^1.0.2"
+  },
+  "devDependencies": {
+    "standard": "^13.1.0",
+    "tape": "^4.11.0",
+    "tape-promise": "^4.0.0"
+  }
+}
