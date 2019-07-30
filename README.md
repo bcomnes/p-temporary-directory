@@ -10,6 +10,7 @@ npm install p-temporary-directory
 
 ``` js
 const tmp = require('p-temporary-directory')
+const tmpCb = require('p-temporary-directory/cb') // same as temporary-directory
 
 async function usuallyATest() {
   const [dir, cleanup] = await tmp()
