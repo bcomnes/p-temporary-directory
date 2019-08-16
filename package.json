@@ -1,28 +1,34 @@
 {
   "name": "p-temporary-directory",
+  "description": "Promise temporary directories",
   "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "standard && tape test.js"
+  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io/)",
+  "bugs": {
+    "url": "https://github.com/bcomnes/p-temporary-directory/issues"
   },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "dependency-check": "^4.1.0",
+    "npm-run-all": "^4.1.5",
+    "standard": "^13.1.0",
+    "tape": "^4.11.0",
+    "tape-promise": "^4.0.0"
+  },
+  "homepage": "https://github.com/bcomnes/p-temporary-directory#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bcomnes/p-temporary-directory.git"
   },
-  "keywords": [],
-  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bcomnes/p-temporary-directory/issues"
-  },
-  "homepage": "https://github.com/bcomnes/p-temporary-directory#readme",
-  "dependencies": {
-    "temporary-directory": "^1.0.2"
-  },
-  "devDependencies": {
-    "standard": "^13.1.0",
-    "tape": "^4.11.0",
-    "tape-promise": "^4.0.0"
+  "scripts": {
+    "test": "run-s test:*",
+    "test:deps": "dependency-check ./package.json cb.js index.js --no-dev",
+    "test:standard": "standard",
+    "test:tape": "tape test.js"
   }
 }

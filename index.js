@@ -1,4 +1,4 @@
-const tmpCb = require('temporary-directory')
+const tmpCb = require('./cb')
 
 module.exports = function tmp () {
   return new Promise((resolve, reject) => {
