@@ -1,7 +1,7 @@
 {
   "name": "p-temporary-directory",
   "description": "Promise temporary directories",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io/)",
   "bugs": {
     "url": "https://github.com/bcomnes/p-temporary-directory/issues"
@@ -32,12 +32,12 @@
     "version:git": "git add CHANGELOG.md"
   },
   "c8": {
-     "reporter": [
-       "lcov",
-       "text"
-     ]
-   },
-   "engines": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
   }
